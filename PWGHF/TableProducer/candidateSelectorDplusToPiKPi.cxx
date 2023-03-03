@@ -100,17 +100,17 @@ struct HfCandidateSelectorDplusToPiKPi {
     if (std::abs(candidate.maxNormalisedDeltaIP()) > cuts->get(pTBin, "max normalized deltaIP")) {
       return false;
     }
-     // product of daughter impact parameters
+    // product of daughter impact parameters
     if (candidate.impactParameterProngSqSum() > cuts->get(pTBin, "sum d0^2")) {
       return false;
     }
     if (candidate.decayLengthXY() > cuts->get(pTBin, "decay length XY")) {
       return false;
     }
-   if (std::abs(candidate.impactParameterNormalised0()) > cuts->get(pTBin, "DCA") || std::abs(candidate.impactParameterNormalised1()) > cuts->get(pTBin, "DCA")) {
+    if (std::abs(candidate.impactParameterNormalised0()) > cuts->get(pTBin, "DCA") || std::abs(candidate.impactParameterNormalised1()) > cuts->get(pTBin, "DCA")) {
       return false;
     }
-   return true;
+    return true;
   }
 
   void process(aod::HfCand3Prong const& candidates, aod::BigTracksPID const&)

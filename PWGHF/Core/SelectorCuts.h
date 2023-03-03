@@ -366,37 +366,37 @@ static const int nCutVars = 11;
 // default values for the pT bin edges (can be used to configure histogram axis)
 // offset by 1 from the bin numbers in cuts array
 constexpr double binsPt[nBinsPt + 1] = {
-    0.,
-    1.,
-    1.5,
-    2.,
-    2.5,
-    3.,
-    3.5,
-    4.,
-    4.5,
-    5.,
-    5.5,
-    6.,
-    6.5,
-    7.,
-    7.5,
-    8.,
-    9.,
-    10.,
-    11.,
-    12.,
-    14.,
-    16.,
-    24.,
-    36.,
-    50.,
-    100.};
+  0.,
+  1.,
+  1.5,
+  2.,
+  2.5,
+  3.,
+  3.5,
+  4.,
+  4.5,
+  5.,
+  5.5,
+  6.,
+  6.5,
+  7.,
+  7.5,
+  8.,
+  9.,
+  10.,
+  11.,
+  12.,
+  14.,
+  16.,
+  24.,
+  36.,
+  50.,
+  100.};
 auto vecBinsPt = std::vector<double>{binsPt, binsPt + nBinsPt + 1};
 
 // default values for the cuts
 // selections from pp at 13 TeV 2023 analysis https://alice-notes.web.cern.ch/node/1339
-constexpr double cuts[nBinsPt][nCutVars] = {{0.2, 0.3, 0.3, 0.02, 0., 0.85, 0.9, 2.5, 0., 0., 1.E10},  /* 0.0  < pT < 1.0  */ 
+constexpr double cuts[nBinsPt][nCutVars] = {{0.2, 0.3, 0.3, 0.02, 0., 0.85, 0.9, 2.5, 0., 0., 1.E10},  /* 0.0  < pT < 1.0  */
                                             {0.2, 0.3, 0.3, 0.03, 0., 0.85, 0.9, 2.5, 0., 0., 1.E10},  /* 1.0  < pT < 1.5  */
                                             {0.2, 0.3, 0.3, 0.03, 0., 0.85, 0.9, 2.5, 0., 0., 1.E10},  /* 1.5  < pT < 2.0  */
                                             {0.2, 0.3, 0.3, 0.03, 0., 0.85, 0.9, 2.5, 0., 0., 1.E10},  /* 2.0  < pT < 2.5  */
@@ -420,7 +420,7 @@ constexpr double cuts[nBinsPt][nCutVars] = {{0.2, 0.3, 0.3, 0.02, 0., 0.85, 0.9,
                                             {0.2, 0.3, 0.3, 0.03, 0., 0.75, 0.8, 2.5, 0., 0., 1.E10},  /* 16.0  < pT < 24.0  */
                                             {0.2, 0.3, 0.3, 0.03, 0., 0.75, 0.8, 2.5, 0., 0., 1.E10},  /* 24.0  < pT < 36.0  */
                                             {0.2, 0.3, 0.3, 0.03, 0., 0.75, 0.8, 2.5, 0., 0., 1.E10},  /* 36.0  < pT < 50.0  */
-                                            {0.2, 0.3, 0.3, 0.03, 0., 0.75, 0.8, 2.5, 0., 0., 1.E10}};  /* 50.0  < pT < 100.0 */
+                                            {0.2, 0.3, 0.3, 0.03, 0., 0.75, 0.8, 2.5, 0., 0., 1.E10}}; /* 50.0  < pT < 100.0 */
 
 // row labels
 static const std::vector<std::string> labelsPt = {
@@ -447,7 +447,7 @@ static const std::vector<std::string> labelsPt = {
   "pT bin 20",
   "pT bin 21",
   "pT bin 22",
-  "pT bin 23", 
+  "pT bin 23",
   "pT bin 24"};
 
 // column labels
